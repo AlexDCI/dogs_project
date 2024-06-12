@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+</head>
+<body>
+    <h2>All Dogs</h2>
+    <ul>
+        {% for dog in dogs %}
+            <li>{{ dog.name }} ({{ dog.breed }}), Age: {{ dog.age }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{% url 'add_dog' %}">Add New Dog</a>
+</body>
+</html>

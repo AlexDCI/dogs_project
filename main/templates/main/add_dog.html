@@ -1,0 +1,16 @@
+<!-- edit_dog.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Dog</title>
+</head>
+<body>
+    <h2>Add Dog</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>
